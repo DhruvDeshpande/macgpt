@@ -1,0 +1,5 @@
+#!/bin/zsh
+cd ~/Desktop/mac_copilot || exit 1
+source .venv/bin/activate
+python3 macgpt.py "$@"
+

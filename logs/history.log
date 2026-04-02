@@ -1,0 +1,347 @@
+================================================================================
+TIME: 2026-01-09 00:10:09
+REQUEST: show me all pdfs on my desktop
+COMMAND: ls ~/Desktop/*.{pdf}
+SAFE: True
+OUTPUT:
+Command generated and safe
+
+================================================================================
+TIME: 2026-01-09 00:10:14
+REQUEST: show me all pdfs on my desktop
+COMMAND: ls ~/Desktop/*.{pdf}
+SAFE: True
+EXIT_CODE: 1
+OUTPUT:
+ls: /Users/dhruvdeshpande/Desktop/*.{pdf}: No such file or directory
+
+================================================================================
+TIME: 2026-01-09 00:12:42
+REQUEST: show me all pdfs on my desktop
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+OUTPUT:
+Command generated and safe
+
+================================================================================
+TIME: 2026-01-09 00:12:47
+REQUEST: show me all pdfs on my desktop
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+/Users/dhruvdeshpande/Desktop/updated i20.pdf
+
+================================================================================
+TIME: 2026-01-09 00:16:14
+REQUEST: show me all pdfs on my desktop
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+/Users/dhruvdeshpande/Desktop/updated i20.pdf
+
+================================================================================
+TIME: 2026-01-09 00:16:39
+REQUEST: make a folder called test123 on my desktop
+COMMAND: mkdir ~/"Desktop/test123"
+SAFE: True
+EXIT_CODE: 0
+
+================================================================================
+TIME: 2026-01-09 00:20:11
+REQUEST: show me all pdfs on my desktop
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+/Users/dhruvdeshpande/Desktop/updated i20.pdf
+
+================================================================================
+TIME: 2026-01-09 00:20:18
+REQUEST: list all running processes
+COMMAND: ps x
+SAFE: False
+OUTPUT:
+BLOCKED_BY_SAFETY
+
+================================================================================
+TIME: 2026-01-09 00:22:42
+REQUEST: list all running processes
+COMMAND: ls -l $(pgrep -f ".*")
+SAFE: True
+EXIT_CODE: 1
+OUTPUT:
+ls: 1003: No such file or directory
+ls: 1004: No such file or directory
+ls: 1005: No such file or directory
+ls: 1008: No such file or directory
+ls: 10120: No such file or directory
+ls: 10121: No such file or directory
+ls: 10125: No such file or directory
+ls: 10126: No such file or directory
+ls: 10127: No such file or directory
+ls: 10128: No such file or directory
+ls: 1013: No such file or directory
+ls: 10187: No such file or directory
+ls: 10188: No such file or directory
+ls: 1019: No such file or directory
+ls: 10192: No such file or directory
+ls: 10193: No such file or directory
+ls: 10194: No such file or directory
+ls: 10195: No such file or directory
+ls: 1020: No such file or directory
+ls: 1023: No such file or directory
+ls: 10252: No such file or directory
+ls: 10282: No such file or dire ... [truncated]
+
+================================================================================
+TIME: 2026-01-09 00:23:04
+REQUEST: show me all pdfs on my desktop
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+/Users/dhruvdeshpande/Desktop/updated i20.pdf
+
+================================================================================
+TIME: 2026-01-09 00:27:55
+REQUEST: list all running processes
+COMMAND: ps aux
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+USER               PID  %CPU %MEM      VSZ    RSS   TT  STAT STARTED      TIME COMMAND
+dhruvdeshpande    5533   6.3  7.1 418212960 1348976   ??  S    12:10AM   0:03.25 /Applications/Ollama.app/Contents/Resources/ollama runner --model /Users/dhruvdeshpande/.ollama/models/blobs/sha256-6a0746a1ec1aef3e7ec53868f220ff6e389f6f8ef87a01d77c96807de94ca2aa --port 51699
+dhruvdeshpande   89519   4.4  0.1 427038752  27264   ??  S    Tue05PM   1:28.15 /usr/libexec/duetexpertd
+_windowserver      572   3.1  0.6 416162448 110512   ??  Ss   25Aug25 6580:38.42 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer -daemon
+root              5951   2.9  0.0 410724368   3232 s000  R+   12:27AM   0:00.01 ps aux
+dhruvdeshpande   63524   2.8  0.8 417640256 156736   ??  S     9Dec25 379:28.74 / ... [truncated]
+
+================================================================================
+TIME: 2026-01-09 00:29:51
+REQUEST: list all running processes
+COMMAND: ps aux
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+USER               PID  %CPU %MEM      VSZ    RSS   TT  STAT STARTED      TIME COMMAND
+dhruvdeshpande    5533  15.3  7.1 418212960 1334288   ??  S    12:10AM   0:03.47 /Applications/Ollama.app/Contents/Resources/ollama runner --model /Users/dhruvdeshpande/.ollama/models/blobs/sha256-6a0746a1ec1aef3e7ec53868f220ff6e389f6f8ef87a01d77c96807de94ca2aa --port 51699
+dhruvdeshpande   89519   9.0  0.1 427038752  24368   ??  S    Tue05PM   1:28.45 /usr/libexec/duetexpertd
+_windowserver      572   8.3  0.6 416182464 112528   ??  Ss   25Aug25 6581:08.55 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer -daemon
+root               541   3.7  0.1 426983008  10208   ??  Ss   25Aug25 190:14.23 /usr/libexec/opendirectoryd
+dhruvdeshpande   63524   2.9  1.2 417640256 225808   ??  S   ... [truncated]
+
+================================================================================
+TIME: 2026-01-09 00:35:33
+REQUEST: show me all pdfs on my desktop
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+/Users/dhruvdeshpande/Desktop/updated i20.pdf
+
+================================================================================
+TIME: 2026-01-27 19:20:06
+REQUEST: show me all pdfs on my desktop
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+/Users/dhruvdeshpande/Desktop/updated i20.pdf
+
+================================================================================
+TIME: 2026-01-27 20:10:22
+REQUEST: show me all pdfs on my desktop
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+/Users/dhruvdeshpande/Desktop/updated i20.pdf
+
+================================================================================
+TIME: 2026-01-29 10:32:32
+REQUEST: show me all pdfs on my desktop
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+/Users/dhruvdeshpande/Desktop/updated i20.pdf
+
+================================================================================
+TIME: 2026-01-29 10:36:48
+REQUEST: show me all pdfs on my desktop
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+/Users/dhruvdeshpande/Desktop/updated i20.pdf
+
+================================================================================
+TIME: 2026-01-29 10:36:59
+REQUEST: show me all pdfs on my desktop
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+/Users/dhruvdeshpande/Desktop/updated i20.pdf
+
+================================================================================
+TIME: 2026-01-31 16:20:15
+REQUEST: show me all pdfs on my desktop
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+/Users/dhruvdeshpande/Desktop/updated i20.pdf
+
+================================================================================
+TIME: 2026-01-31 18:12:38
+REQUEST: show me all pdfs on my desktop
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+/Users/dhruvdeshpande/Desktop/updated i20.pdf
+
+================================================================================
+TIME: 2026-01-31 19:17:43
+REQUEST: show me all pdfs on my desktop
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+/Users/dhruvdeshpande/Desktop/updated i20.pdf
+
+================================================================================
+TIME: 2026-01-31 19:39:09
+REQUEST: show me all pdfs on my desktop
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+/Users/dhruvdeshpande/Desktop/updated i20.pdf
+
+================================================================================
+TIME: 2026-01-31 19:41:42
+REQUEST: show me all pdfs on my desktop
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+/Users/dhruvdeshpande/Desktop/updated i20.pdf
+
+================================================================================
+TIME: 2026-01-31 19:46:50
+REQUEST: show me all pdfs on my desktop
+ROUTER: provider=ollama model=qwen2.5:3b reason=fast: simple file operation
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+OUTPUT:
+Command generated and safe
+
+================================================================================
+TIME: 2026-01-31 19:46:50
+REQUEST: show me all pdfs on my desktop
+ROUTER: provider=ollama model=qwen2.5:3b reason=fast: simple file operation
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+/Users/dhruvdeshpande/Desktop/updated i20.pdf
+
+================================================================================
+TIME: 2026-01-31 19:52:36
+REQUEST: show me all pdfs on my desktop
+ROUTER: provider=ollama model=qwen2.5:3b reason=fast: simple file operation
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+OUTPUT:
+Command generated and safe
+
+================================================================================
+TIME: 2026-01-31 19:52:36
+REQUEST: show me all pdfs on my desktop
+ROUTER: provider=ollama model=qwen2.5:3b reason=fast: simple file operation
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+/Users/dhruvdeshpande/Desktop/updated i20.pdf
+
+================================================================================
+TIME: 2026-01-31 19:52:45
+REQUEST: show me all pdfs on my desktop
+ROUTER: provider=ollama model=qwen2.5:3b reason=fast: simple file operation
+COMMAND: ls "~/Desktop/*.pdf"
+SAFE: True
+OUTPUT:
+Command generated and safe
+
+================================================================================
+TIME: 2026-01-31 19:52:45
+REQUEST: show me all pdfs on my desktop
+ROUTER: provider=ollama model=qwen2.5:3b reason=fast: simple file operation
+COMMAND: ls "~/Desktop/*.pdf"
+SAFE: True
+EXIT_CODE: 1
+OUTPUT:
+ls: ~/Desktop/*.pdf: No such file or directory
+
+================================================================================
+TIME: 2026-02-01 20:16:17
+REQUEST: show me all pdfs on my desktop
+ROUTER: provider=ollama model=qwen2.5:3b reason=fast: simple file operation
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+OUTPUT:
+Command generated and safe
+
+================================================================================
+TIME: 2026-02-01 20:16:17
+REQUEST: show me all pdfs on my desktop
+ROUTER: provider=ollama model=qwen2.5:3b reason=fast: simple file operation
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+/Users/dhruvdeshpande/Desktop/updated i20.pdf
+
+================================================================================
+TIME: 2026-02-01 20:16:28
+REQUEST: show me all pdfs on my desktop
+ROUTER: provider=ollama model=qwen2.5:3b reason=fast: simple file operation
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+OUTPUT:
+Command generated and safe
+
+================================================================================
+TIME: 2026-02-01 20:16:28
+REQUEST: show me all pdfs on my desktop
+ROUTER: provider=ollama model=qwen2.5:3b reason=fast: simple file operation
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+/Users/dhruvdeshpande/Desktop/updated i20.pdf
+
+================================================================================
+TIME: 2026-02-01 20:27:28
+REQUEST: show me all pdfs on my desktop
+ROUTER: provider=ollama model=qwen2.5:3b reason=fast: simple file operation
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+OUTPUT:
+Command generated and safe
+
+================================================================================
+TIME: 2026-02-01 20:27:28
+REQUEST: show me all pdfs on my desktop
+ROUTER: provider=ollama model=qwen2.5:3b reason=fast: simple file operation
+COMMAND: ls ~/Desktop/*.pdf
+SAFE: True
+EXIT_CODE: 0
+OUTPUT:
+/Users/dhruvdeshpande/Desktop/updated i20.pdf
+
